@@ -21,11 +21,16 @@ class _LoginState extends State<LoginPage> {
 
       //check if username & password macthing
       if (username == 'admin' && password == '1234') {
-        _loginMessage = 'Welcome Admin';
-        _messageColor = Colors.red;
+        setState(() {
+          _loginMessage = 'Welcome Admin';
+          _messageColor = Colors.red;
+        });
+        Navigator.pushNamed(context, '/calculator');
       } else {
-        _loginMessage = 'Wrong username and password';
-        _messageColor = Colors.red;
+        setState(() {
+          _loginMessage = 'Wrong username and password';
+          _messageColor = Colors.red;
+        });
       }
     });
   }
@@ -34,7 +39,10 @@ class _LoginState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login', style: TextStyle(color: Colors.white)),
+        title: const Text(
+          'Login',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
         backgroundColor: Colors.blue,
       ),
       body: Padding(
