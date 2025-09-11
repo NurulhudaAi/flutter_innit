@@ -13,9 +13,13 @@ class _MultiChildDemoState extends State<MultiChildDemo> {
     return Scaffold(
       body: SafeArea(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(color: Colors.green, width: 100, height: 100),
+            Spacer(flex: 3),
             Container(color: Colors.yellow, width: 100, height: 150),
+            Spacer(flex: 2),
             Container(color: Colors.red, width: 100, height: 100),
           ],
         ),
