@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_innit/week04/calculator.dart';
 import 'package:flutter_innit/week04/login.dart';
+import 'package:flutter_innit/week05/assignment_1.dart';
 import 'package:flutter_innit/week05/design2_demo.dart';
 import 'package:flutter_innit/week05/design_demo.dart';
 import 'package:flutter_innit/week05/multi_child_demo.dart';
+import 'package:flutter_innit/week05/randomBg_demo.dart';
 import 'package:flutter_innit/week05/randomNumber_demo.dart';
 import 'package:flutter_innit/week05/single_child_demo.dart';
 
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const RandomNumber(),
+      home: const DesignFontApp(),
       routes: {
         '/login': (context) => const LoginPage(),
         '/calculator': (context) => const CalculatorPage(),
