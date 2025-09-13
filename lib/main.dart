@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_innit/week01/calculator.dart';
-import 'package:flutter_innit/week01/login.dart';
+import 'package:flutter_innit/week05/assignment_3.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,10 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/login',
-      routes: {'/login': (context) => const LoginPage(),
-      '/calculator': (context) => const CalculatorPage(),
-      },
+      home: const GuessGame(),
     );
   }
 }
