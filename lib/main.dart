@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_innit/week06/exersice_6.dart';
+import 'package:flutter_innit/week06/exercise_10.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Exersice6(),
+      home: const Exercise10(),
     );
   }
 }
