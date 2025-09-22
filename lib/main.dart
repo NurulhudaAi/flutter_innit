@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_innit/week05/assignment_3.dart';
+import 'package:flutter_innit/week06/assignment_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const GuessGame(),
+      home: const Assignment2(),
     );
   }
 }
